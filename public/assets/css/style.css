@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap");
+
+:root {
+    --font-family-primary: "Roboto Mono", sans-serif;
+}
+
+.normal {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.semibold {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.title-primary {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: #2d2d2d;
+}
+
+.head {
+    padding-top: 50px;
+}
+
+.tes {
+    border: 1px solid red;
+}
+
+.form-control {
+    border: none;
+    border-radius: 0; /* Jika Anda ingin menghapus radius border juga */
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: initially;
+}
+
+.form-control::after {
+    border-color: initially;
+}
+
+.card-text {
+    overflow: hidden; /* Menyembunyikan overflow teks */
+    text-overflow: ellipsis; /* Menampilkan elipsis (...) jika teks terlalu panjang */
+    white-space: nowrap; /* Mencegah teks pindah ke baris baru */
+    max-height: 100; /* Maksimum tinggi teks sebelum muncul elipsis */
+}
+
+.card-link {
+    display: inline-block; /* Menampilkan "Read More" sebagai link yang inline */
+}
